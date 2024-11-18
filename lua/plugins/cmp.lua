@@ -1,24 +1,24 @@
 return {
-    'hrsh7th/nvim-cmp',
+  'hrsh7th/nvim-cmp',
 
-    event = "InsertEnter",
+  event = "InsertEnter",
 
-    dependencies = {
-      'L3MON4D3/LuaSnip',
-      'saadparwaiz1/cmp_luasnip',
-      'rafamadriz/friendly-snippets',
-      'hrsh7th/cmp-nvim-lsp',
-      'hrsh7th/cmp-buffer',
-		  'hrsh7th/cmp-path',
-    },
+  dependencies = {
+    'L3MON4D3/LuaSnip',
+    'saadparwaiz1/cmp_luasnip',
+    'rafamadriz/friendly-snippets',
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+  },
 
-  config = function ()
+  config = function()
     local cmp = require 'cmp'
     local luasnip = require 'luasnip'
     require('luasnip.loaders.from_vscode').lazy_load()
     luasnip.config.setup {}
 
-    cmp.setup ({
+    cmp.setup({
       -- window = {
       -- completion: cmp.config.window.bordered(),
       -- documentation: cmp.config.window.bordered(),

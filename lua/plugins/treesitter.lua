@@ -5,6 +5,8 @@ return {
   },
   build = ':TSUpdate',
 
+  auto_install = true,
+
   ensure_installed = { 'json', 'lua', 'tsx', 'typescript', 'scss', 'vimdoc', 'vim' },
 
   indent = {
